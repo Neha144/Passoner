@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Password Manager
+        <link rel="icon" type="images/x-icon" href="/images/newfav21.jpg">
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Passoner</div>
+        <ul>
+             <li><a href="#about">About</a></li>
+             <li><a href="#contact">Contact</a></li>
+        </ul>
+                
+            <!-- Add id attribute to the contact section -->
+    </nav>
+        <div class="container">
+            <h1>Personal Password Manager</h1>
+            <p>Hey Bruhh !!!  forget password ??  ,let's make it easy  to manage your personal critical passwords...</p>
+            <h2>Your Passwords <span id="alert">(Copied!)</span></h2> 
+              <table>
+                <tr>
+                  <th>Website</th>
+                  <th>Username</th>
+                  <th>Password</th>
+                  <th>Delete</th>
+                </tr> 
+              </table>
+
+            <h2>Add a Password</h2>
+      <form action="/submit" method="post" onsubmit="return validateForm()">
+             <!-- Text input for website -->
+          <label for="website">Website:</label>
+          <input type="text" id="website" name="website" required>
+          <br><br>
+              <!-- Text input for username -->
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <br><br>
+               <!-- Password input -->
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+               <!-- Submit button -->
+           <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+        <!-- Contact  section defined here-->
+    <section id="contact">
+        <div class="container">
+        <a href="mailto:neha23400mishra@gmail.com"   class="fa fa-envelope " style="font-size:36px;color:black"></a>
+        <a href="https://github.com/Neha144" target="_blank" class="fa fa-github" style="font-size:36px;color:black"></a>
+        <a href="https://www.linkedin.com/in/neha-mishra-910114272"  target="_blank" class="fa fa-linkedin" style="font-size:36px;color:black"></a>
+        
+    </section>
+        <!-- About section defined here-->
+    <section id="about">
+        <a href="" ></a><br>
+         <p> Hey!!!   This is your personal passsword manager website. It helps you to keep safe your passwords at your local storage.
+            <br>Store,Manage,Retrieve your data{passwords} easily and 24*7. </p> <p class="thick">Developed by Neha Mishra.</p>  
+    </section> 
+</div>
+    <!-- Button code that take u to the top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+         <!-- JavaScript linked  -->
+         <script src="script.js"></script>
+    </body>
+</html>
